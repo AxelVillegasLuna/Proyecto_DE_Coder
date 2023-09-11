@@ -28,8 +28,29 @@ def get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS):
     except Exception:
         return False
 
+# Función para obtener la fecha de la tabla paramétrica
+def get_fecha():
+    conn = get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS)
+    cur = conn.cursor()
+    select_table_query = """SELECT fecha FROM villegas_axel_coderhouse.parametrica
+                            WHERE proceso_nombre = 'PROCESO_COVID'"""
+    cur.execute(select_table_query)
+    fecha = cur.fetchone()[0]
+    fecha_format = fecha.strftime('%Y-%m-%d')
+    cur.close()
+    conn.close()
+    return fecha_format
+
+# Cargamos los datos para la conexión desde las variables de entorno
+load_dotenv()
+host_RS = os.getenv("HOST_RS")
+db_name_RS = os.getenv("DB_NAME_RS")
+user_RS = os.getenv("USER_RS")
+passw_RS = os.getenv("PASS_RS")
+port_RS = os.getenv("PORT_RS")
+
 # Seteo de ciertas estructuras necesarias para obtener la información requerida
-fecha = '2020-07-25'
+fecha = get_fecha()
 paises = ['BRA', 'COL', 'ECU', 'ARG', 'CHL', 'PER', 'PRY', 'BOL', 'URY', 'VEN']
 datos_final = {'fecha': [],
                'confirmados': [],
@@ -58,14 +79,6 @@ for pais in paises:
     datos_final['dif_activos_ant'].append(respuesta['data'][0]['active_diff'])
     datos_final['tasa_mortalidad'].append(respuesta['data'][0]['fatality_rate'])
     datos_final['region'].append(respuesta['data'][0]['region']['name'])
-
-# Cargamos los datos para la conexión desde las variables de entorno
-load_dotenv()
-host_RS = os.getenv("HOST_RS")
-db_name_RS = os.getenv("DB_NAME_RS")
-user_RS = os.getenv("USER_RS")
-passw_RS = os.getenv("PASS_RS")
-port_RS = os.getenv("PORT_RS")
 
 # Realizamos la conexión a la base de datos en RedShift
 conn = get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS)
@@ -105,6 +118,13 @@ for index, row in df.iterrows():
                             dif_recup_ant, activos, dif_activos_ant, tasa_mortalidad, region) VALUES (to_date('{row['fecha']}', 'yyyy-mm-dd'), {row['confirmados']}, {row['dif_confirmados']}, {row['muertes']},{row['dif_muertes_ant']}, {row['recuperados']}, {row['dif_recup_ant']}, {row['activos']}, {row['dif_activos_ant']}, {row['tasa_mortalidad']}, '{row['region']}')"""
     cur.execute(insert_table_query)
     conn.commit()
+
+# Una vez que insertados los registros, procedemos a actualizar la fecha de la tabla paramétrica
+update_table_query = f"""UPDATE villegas_axel_coderhouse.parametrica
+                        SET fecha = fecha + INTERVAL '1 day'
+                        WHERE proceso_nombre = 'PROCESO_COVID'"""
+cur.execute(update_table_query)
+conn.commit()
 
 # Cerramos el cursor y la conexión a la base de datos
 cur.close()
