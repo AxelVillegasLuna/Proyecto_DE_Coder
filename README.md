@@ -10,9 +10,15 @@ para prevenir el contagio de la enfermedad.
 La página oficial de dicha API es la siguiente:
 > `https://covid-api.com/`
 
-En este proyecto se han utilizado las siguientes librerías:
+En este proyecto se han utilizado las siguientes librerías/tecnologías:
 
-| Librería    | Link |
-|-------------| ------ |
+| Librería/Tecnología | Link |
+|---------------------| ------ |
 | Psycopg | [https://www.psycopg.org/]|
 | Python-dotenv | [https://github.com/theskumar/python-dotenv]|
+| Pandas | [https://pandas.pydata.org/]|
+| Requests | [https://docs.python.org/3/library/smtplib.html]|
+| PYTZ | [https://pypi.org/project/pytz/]|
+| OS | [https://docs.python.org/es/3.10/library/os.html]|
+| Airflow | [https://airflow.apache.org/]|
+| Docker | [https://www.docker.com/]|

@@ -14,6 +14,7 @@ db_name_RS = os.environ.get("DB_NAME_RS")
 user_RS = os.environ.get("USER_RS")
 passw_RS = os.environ.get("PASS_RS")
 port_RS = os.environ.get("PORT_RS")
+pass_email = os.environ.get("PASS_MAIL")
 
 # Función para realizar la conexión con la base de datos en RedShift
 def get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS):
@@ -48,7 +49,7 @@ def enviar_mail(mensaje, error=0):
   try:
       x=smtplib.SMTP('smtp.gmail.com',587)
       x.starttls()
-      x.login('datawarehouse.axel@gmail.com','bbwm gpxc anxj drzk')
+      x.login('datawarehouse.axel@gmail.com', pass_email)
       subject=f'Consulta a la api de COVID - {datetime.now(pytz.timezone("America/Argentina/Buenos_Aires")).strftime("%Y-%m-%d %H:%M:%S")}'
       if error == 0:
         body_text=f'El proceso corrio de forma exitosa\nLos datos recolectados son:\n\n{mensaje}'

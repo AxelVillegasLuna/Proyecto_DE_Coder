@@ -61,6 +61,7 @@ x-airflow-common:
     USER_RS: "villegas_axel_coderhouse"
     PASS_RS: "IlG7757Y8H"
     PORT_RS: 5439
+    PASS_MAIL: "bbwm gpxc anxj drzk"
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
