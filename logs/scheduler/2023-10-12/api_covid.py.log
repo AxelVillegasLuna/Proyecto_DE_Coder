@@ -1,0 +1,130 @@
+[2023-10-12 22:24:26,946] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:26,947] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:24:26,947] {logging_mixin.py:115} INFO - [2023-10-12 22:24:26,947] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:27,419] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-12 22:24:27,422] {logging_mixin.py:115} INFO - [2023-10-12 22:24:27,419] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-12 22:24:27,423] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:27,436] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.491 seconds
+[2023-10-12 22:24:44,237] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:44,238] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:24:44,238] {logging_mixin.py:115} INFO - [2023-10-12 22:24:44,238] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:46,851] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:46,866] {logging_mixin.py:115} INFO - [2023-10-12 22:24:46,865] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:24:46,880] {logging_mixin.py:115} INFO - [2023-10-12 22:24:46,880] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-03T00:00:00+00:00, run_after=2023-10-04T00:00:00+00:00
+[2023-10-12 22:24:46,898] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 2.663 seconds
+[2023-10-12 22:24:56,952] {processor.py:153} INFO - Started process (PID=237) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:56,952] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:24:56,953] {logging_mixin.py:115} INFO - [2023-10-12 22:24:56,953] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:58,573] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:24:58,585] {logging_mixin.py:115} INFO - [2023-10-12 22:24:58,585] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:24:58,596] {logging_mixin.py:115} INFO - [2023-10-12 22:24:58,596] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:24:58,604] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.654 seconds
+[2023-10-12 22:25:08,648] {processor.py:153} INFO - Started process (PID=243) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:08,648] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:25:08,648] {logging_mixin.py:115} INFO - [2023-10-12 22:25:08,648] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:10,296] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:10,309] {logging_mixin.py:115} INFO - [2023-10-12 22:25:10,309] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:25:10,322] {logging_mixin.py:115} INFO - [2023-10-12 22:25:10,322] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:25:10,334] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.688 seconds
+[2023-10-12 22:25:20,375] {processor.py:153} INFO - Started process (PID=249) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:20,375] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:25:20,376] {logging_mixin.py:115} INFO - [2023-10-12 22:25:20,376] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:22,048] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:22,060] {logging_mixin.py:115} INFO - [2023-10-12 22:25:22,059] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:25:22,074] {logging_mixin.py:115} INFO - [2023-10-12 22:25:22,074] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:25:22,083] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.709 seconds
+[2023-10-12 22:25:32,132] {processor.py:153} INFO - Started process (PID=255) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:32,133] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:25:32,134] {logging_mixin.py:115} INFO - [2023-10-12 22:25:32,134] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:33,788] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:33,799] {logging_mixin.py:115} INFO - [2023-10-12 22:25:33,799] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:25:33,811] {logging_mixin.py:115} INFO - [2023-10-12 22:25:33,811] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:25:33,820] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.689 seconds
+[2023-10-12 22:25:43,869] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:43,870] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:25:43,870] {logging_mixin.py:115} INFO - [2023-10-12 22:25:43,870] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:45,497] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:45,508] {logging_mixin.py:115} INFO - [2023-10-12 22:25:45,508] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:25:45,519] {logging_mixin.py:115} INFO - [2023-10-12 22:25:45,519] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:25:45,528] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.660 seconds
+[2023-10-12 22:25:55,570] {processor.py:153} INFO - Started process (PID=267) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:55,570] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:25:55,571] {logging_mixin.py:115} INFO - [2023-10-12 22:25:55,571] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:57,254] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:25:57,266] {logging_mixin.py:115} INFO - [2023-10-12 22:25:57,266] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:25:57,279] {logging_mixin.py:115} INFO - [2023-10-12 22:25:57,279] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:25:57,288] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.720 seconds
+[2023-10-12 22:26:07,341] {processor.py:153} INFO - Started process (PID=273) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:07,342] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:26:07,343] {logging_mixin.py:115} INFO - [2023-10-12 22:26:07,342] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:09,016] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:09,029] {logging_mixin.py:115} INFO - [2023-10-12 22:26:09,029] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:26:09,043] {logging_mixin.py:115} INFO - [2023-10-12 22:26:09,043] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:26:09,056] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.716 seconds
+[2023-10-12 22:26:19,108] {processor.py:153} INFO - Started process (PID=279) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:19,108] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:26:19,109] {logging_mixin.py:115} INFO - [2023-10-12 22:26:19,109] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:20,772] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:20,783] {logging_mixin.py:115} INFO - [2023-10-12 22:26:20,782] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:26:20,796] {logging_mixin.py:115} INFO - [2023-10-12 22:26:20,796] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:26:20,809] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.703 seconds
+[2023-10-12 22:26:30,849] {processor.py:153} INFO - Started process (PID=285) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:30,850] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:26:30,850] {logging_mixin.py:115} INFO - [2023-10-12 22:26:30,850] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:32,507] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:32,518] {logging_mixin.py:115} INFO - [2023-10-12 22:26:32,517] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:26:32,529] {logging_mixin.py:115} INFO - [2023-10-12 22:26:32,529] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:26:32,537] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.690 seconds
+[2023-10-12 22:26:42,586] {processor.py:153} INFO - Started process (PID=291) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:42,587] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:26:42,588] {logging_mixin.py:115} INFO - [2023-10-12 22:26:42,587] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:44,238] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:44,249] {logging_mixin.py:115} INFO - [2023-10-12 22:26:44,248] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:26:44,261] {logging_mixin.py:115} INFO - [2023-10-12 22:26:44,261] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:26:44,269] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.685 seconds
+[2023-10-12 22:26:54,319] {processor.py:153} INFO - Started process (PID=297) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:54,320] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:26:54,320] {logging_mixin.py:115} INFO - [2023-10-12 22:26:54,320] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:55,974] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:26:55,987] {logging_mixin.py:115} INFO - [2023-10-12 22:26:55,986] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:26:56,002] {logging_mixin.py:115} INFO - [2023-10-12 22:26:56,002] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:26:56,011] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.694 seconds
+[2023-10-12 22:27:06,052] {processor.py:153} INFO - Started process (PID=303) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:06,053] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:27:06,053] {logging_mixin.py:115} INFO - [2023-10-12 22:27:06,053] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:07,714] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:07,725] {logging_mixin.py:115} INFO - [2023-10-12 22:27:07,724] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:27:07,736] {logging_mixin.py:115} INFO - [2023-10-12 22:27:07,736] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:27:07,745] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.694 seconds
+[2023-10-12 22:27:17,799] {processor.py:153} INFO - Started process (PID=327) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:17,800] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:27:17,800] {logging_mixin.py:115} INFO - [2023-10-12 22:27:17,800] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:19,495] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:19,508] {logging_mixin.py:115} INFO - [2023-10-12 22:27:19,508] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:27:19,522] {logging_mixin.py:115} INFO - [2023-10-12 22:27:19,522] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:27:19,531] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.734 seconds
+[2023-10-12 22:27:29,580] {processor.py:153} INFO - Started process (PID=342) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:29,581] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:27:29,581] {logging_mixin.py:115} INFO - [2023-10-12 22:27:29,581] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:31,250] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:31,261] {logging_mixin.py:115} INFO - [2023-10-12 22:27:31,261] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:27:31,272] {logging_mixin.py:115} INFO - [2023-10-12 22:27:31,272] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:27:31,281] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.702 seconds
+[2023-10-12 22:27:41,322] {processor.py:153} INFO - Started process (PID=348) to work on /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:41,322] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-12 22:27:41,323] {logging_mixin.py:115} INFO - [2023-10-12 22:27:41,323] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:43,028] {processor.py:651} INFO - DAG(s) dict_keys(['consultar_info_covid_api']) retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-12 22:27:43,039] {logging_mixin.py:115} INFO - [2023-10-12 22:27:43,039] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-12 22:27:43,051] {logging_mixin.py:115} INFO - [2023-10-12 22:27:43,051] {dag.py:2972} INFO - Setting next_dagrun for consultar_info_covid_api to 2023-10-12T00:00:00+00:00, run_after=2023-10-13T00:00:00+00:00
+[2023-10-12 22:27:43,059] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 1.740 seconds

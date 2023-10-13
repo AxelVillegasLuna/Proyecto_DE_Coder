@@ -1,0 +1,23 @@
+[2023-10-13 20:59:19,409] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.update_param_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 20:59:19,415] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.update_param_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 20:59:19,415] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 20:59:19,416] {taskinstance.py:1377} INFO - Starting attempt 14 of 19
+[2023-10-13 20:59:19,416] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 20:59:19,428] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): update_param_redshift> on 2023-10-12 00:00:00+00:00
+[2023-10-13 20:59:19,431] {standard_task_runner.py:52} INFO - Started process 209 to run task
+[2023-10-13 20:59:19,432] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'consultar_info_covid_api', 'update_param_redshift', 'scheduled__2023-10-12T00:00:00+00:00', '--job-id', '404', '--raw', '--subdir', 'DAGS_FOLDER/api_covid.py', '--cfg-path', '/tmp/tmp83fspc4j', '--error-file', '/tmp/tmpxwahmxhq']
+[2023-10-13 20:59:19,433] {standard_task_runner.py:80} INFO - Job 404: Subtask update_param_redshift
+[2023-10-13 20:59:19,471] {task_command.py:371} INFO - Running <TaskInstance: consultar_info_covid_api.update_param_redshift scheduled__2023-10-12T00:00:00+00:00 [running]> on host 738c88afe20a
+[2023-10-13 20:59:19,519] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Axel Villegas Luna
+AIRFLOW_CTX_DAG_ID=consultar_info_covid_api
+AIRFLOW_CTX_TASK_ID=update_param_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-12T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=14
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-12T00:00:00+00:00
+[2023-10-13 20:59:21,198] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-13 20:59:21,208] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=consultar_info_covid_api, task_id=update_param_redshift, execution_date=20231012T000000, start_date=20231013T205919, end_date=20231013T205921
+[2023-10-13 20:59:21,248] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-13 20:59:21,272] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

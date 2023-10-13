@@ -56,6 +56,11 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: 10
+    HOST_RS: "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com"
+    DB_NAME_RS: "data-engineer-database"
+    USER_RS: "villegas_axel_coderhouse"
+    PASS_RS: "IlG7757Y8H"
+    PORT_RS: 5439
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
@@ -66,15 +71,6 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  app:
-    image: python:3.8
-    environment:
-      - HOST_RS="data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com"
-      - DB_NAME_RS="data-engineer-database"
-      - USER_RS="villegas_axel_coderhouse"
-      - PASS_RS="IlG7757Y8H"
-      - PORT_RS=5439
-      
   postgres:
     image: postgres:13
     environment:

@@ -1,0 +1,23 @@
+[2023-10-03 00:21:35,972] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.delete_data_redshift scheduled__2023-10-02T00:00:00+00:00 [queued]>
+[2023-10-03 00:21:35,978] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.delete_data_redshift scheduled__2023-10-02T00:00:00+00:00 [queued]>
+[2023-10-03 00:21:35,979] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-03 00:21:35,979] {taskinstance.py:1377} INFO - Starting attempt 2 of 7
+[2023-10-03 00:21:35,979] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-03 00:21:35,988] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): delete_data_redshift> on 2023-10-02 00:00:00+00:00
+[2023-10-03 00:21:35,991] {standard_task_runner.py:52} INFO - Started process 290 to run task
+[2023-10-03 00:21:35,992] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'consultar_info_covid_api', 'delete_data_redshift', 'scheduled__2023-10-02T00:00:00+00:00', '--job-id', '288', '--raw', '--subdir', 'DAGS_FOLDER/api_covid.py', '--cfg-path', '/tmp/tmpyd3j0hxd', '--error-file', '/tmp/tmpz8ol95g8']
+[2023-10-03 00:21:35,993] {standard_task_runner.py:80} INFO - Job 288: Subtask delete_data_redshift
+[2023-10-03 00:21:36,025] {task_command.py:371} INFO - Running <TaskInstance: consultar_info_covid_api.delete_data_redshift scheduled__2023-10-02T00:00:00+00:00 [running]> on host f57de557d52a
+[2023-10-03 00:21:36,067] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Axel Villegas Luna
+AIRFLOW_CTX_DAG_ID=consultar_info_covid_api
+AIRFLOW_CTX_TASK_ID=delete_data_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-02T00:00:00+00:00
+[2023-10-03 00:21:44,028] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-03 00:21:44,037] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=consultar_info_covid_api, task_id=delete_data_redshift, execution_date=20231002T000000, start_date=20231003T002135, end_date=20231003T002144
+[2023-10-03 00:21:44,087] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-03 00:21:44,109] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

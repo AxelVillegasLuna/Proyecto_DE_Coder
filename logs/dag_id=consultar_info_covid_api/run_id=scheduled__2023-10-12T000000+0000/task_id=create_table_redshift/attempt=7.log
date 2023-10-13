@@ -1,0 +1,23 @@
+[2023-10-13 18:32:36,987] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.create_table_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 18:32:36,993] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.create_table_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 18:32:36,993] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 18:32:36,993] {taskinstance.py:1377} INFO - Starting attempt 7 of 12
+[2023-10-13 18:32:36,993] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 18:32:37,005] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): create_table_redshift> on 2023-10-12 00:00:00+00:00
+[2023-10-13 18:32:37,008] {standard_task_runner.py:52} INFO - Started process 209 to run task
+[2023-10-13 18:32:37,009] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'consultar_info_covid_api', 'create_table_redshift', 'scheduled__2023-10-12T00:00:00+00:00', '--job-id', '362', '--raw', '--subdir', 'DAGS_FOLDER/api_covid.py', '--cfg-path', '/tmp/tmp3es7ea73', '--error-file', '/tmp/tmp4xln2bmg']
+[2023-10-13 18:32:37,010] {standard_task_runner.py:80} INFO - Job 362: Subtask create_table_redshift
+[2023-10-13 18:32:37,049] {task_command.py:371} INFO - Running <TaskInstance: consultar_info_covid_api.create_table_redshift scheduled__2023-10-12T00:00:00+00:00 [running]> on host 738c88afe20a
+[2023-10-13 18:32:37,096] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Axel Villegas Luna
+AIRFLOW_CTX_DAG_ID=consultar_info_covid_api
+AIRFLOW_CTX_TASK_ID=create_table_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-12T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=7
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-12T00:00:00+00:00
+[2023-10-13 18:32:38,735] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-13 18:32:38,743] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=consultar_info_covid_api, task_id=create_table_redshift, execution_date=20231012T000000, start_date=20231013T183236, end_date=20231013T183238
+[2023-10-13 18:32:38,785] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-13 18:32:38,810] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

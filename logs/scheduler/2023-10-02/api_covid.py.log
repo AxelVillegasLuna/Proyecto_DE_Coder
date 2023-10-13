@@ -1,0 +1,724 @@
+[2023-10-02 23:52:37,643] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:37,644] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:52:37,644] {logging_mixin.py:115} INFO - [2023-10-02 23:52:37,644] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:38,243] {logging_mixin.py:115} INFO - [2023-10-02 23:52:38,239] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:52:38,245] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:38,260] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.618 seconds
+[2023-10-02 23:52:48,309] {processor.py:153} INFO - Started process (PID=183) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:48,310] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:52:48,310] {logging_mixin.py:115} INFO - [2023-10-02 23:52:48,310] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:48,539] {logging_mixin.py:115} INFO - [2023-10-02 23:52:48,536] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:52:48,540] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:48,552] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.244 seconds
+[2023-10-02 23:52:58,594] {processor.py:153} INFO - Started process (PID=189) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:58,594] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:52:58,595] {logging_mixin.py:115} INFO - [2023-10-02 23:52:58,595] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:58,804] {logging_mixin.py:115} INFO - [2023-10-02 23:52:58,801] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:52:58,805] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:52:58,816] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.224 seconds
+[2023-10-02 23:53:08,856] {processor.py:153} INFO - Started process (PID=195) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:08,856] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:53:08,857] {logging_mixin.py:115} INFO - [2023-10-02 23:53:08,857] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:09,073] {logging_mixin.py:115} INFO - [2023-10-02 23:53:09,070] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:53:09,074] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:09,085] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.231 seconds
+[2023-10-02 23:53:19,126] {processor.py:153} INFO - Started process (PID=201) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:19,126] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:53:19,127] {logging_mixin.py:115} INFO - [2023-10-02 23:53:19,127] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:19,349] {logging_mixin.py:115} INFO - [2023-10-02 23:53:19,342] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:53:19,350] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:19,365] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.240 seconds
+[2023-10-02 23:53:29,404] {processor.py:153} INFO - Started process (PID=207) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:29,405] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:53:29,405] {logging_mixin.py:115} INFO - [2023-10-02 23:53:29,405] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:29,605] {logging_mixin.py:115} INFO - [2023-10-02 23:53:29,603] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:53:29,606] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:29,618] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.215 seconds
+[2023-10-02 23:53:39,659] {processor.py:153} INFO - Started process (PID=213) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:39,660] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:53:39,660] {logging_mixin.py:115} INFO - [2023-10-02 23:53:39,660] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:39,883] {logging_mixin.py:115} INFO - [2023-10-02 23:53:39,880] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:53:39,884] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:39,897] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.239 seconds
+[2023-10-02 23:53:49,937] {processor.py:153} INFO - Started process (PID=219) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:49,938] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:53:49,938] {logging_mixin.py:115} INFO - [2023-10-02 23:53:49,938] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:50,139] {logging_mixin.py:115} INFO - [2023-10-02 23:53:50,136] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:53:50,140] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:53:50,151] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.215 seconds
+[2023-10-02 23:54:00,191] {processor.py:153} INFO - Started process (PID=225) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:00,192] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:00,192] {logging_mixin.py:115} INFO - [2023-10-02 23:54:00,192] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:00,397] {logging_mixin.py:115} INFO - [2023-10-02 23:54:00,394] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:00,398] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:00,410] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.220 seconds
+[2023-10-02 23:54:10,453] {processor.py:153} INFO - Started process (PID=231) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:10,453] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:10,454] {logging_mixin.py:115} INFO - [2023-10-02 23:54:10,454] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:10,654] {logging_mixin.py:115} INFO - [2023-10-02 23:54:10,651] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:10,655] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:10,667] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.215 seconds
+[2023-10-02 23:54:20,706] {processor.py:153} INFO - Started process (PID=237) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:20,707] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:20,707] {logging_mixin.py:115} INFO - [2023-10-02 23:54:20,707] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:20,923] {logging_mixin.py:115} INFO - [2023-10-02 23:54:20,920] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:20,924] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:20,935] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.231 seconds
+[2023-10-02 23:54:30,977] {processor.py:153} INFO - Started process (PID=243) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:30,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:30,977] {logging_mixin.py:115} INFO - [2023-10-02 23:54:30,977] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:31,192] {logging_mixin.py:115} INFO - [2023-10-02 23:54:31,189] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:31,193] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:31,204] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.229 seconds
+[2023-10-02 23:54:41,245] {processor.py:153} INFO - Started process (PID=249) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:41,246] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:41,246] {logging_mixin.py:115} INFO - [2023-10-02 23:54:41,246] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:41,455] {logging_mixin.py:115} INFO - [2023-10-02 23:54:41,451] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:41,456] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:41,467] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.223 seconds
+[2023-10-02 23:54:51,507] {processor.py:153} INFO - Started process (PID=255) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:51,507] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:54:51,508] {logging_mixin.py:115} INFO - [2023-10-02 23:54:51,508] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:51,722] {logging_mixin.py:115} INFO - [2023-10-02 23:54:51,718] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:54:51,723] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:54:51,735] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.229 seconds
+[2023-10-02 23:55:01,774] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:01,775] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:01,775] {logging_mixin.py:115} INFO - [2023-10-02 23:55:01,775] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:01,989] {logging_mixin.py:115} INFO - [2023-10-02 23:55:01,987] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:55:01,991] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:02,002] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.229 seconds
+[2023-10-02 23:55:12,040] {processor.py:153} INFO - Started process (PID=267) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:12,040] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:12,041] {logging_mixin.py:115} INFO - [2023-10-02 23:55:12,041] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:12,251] {logging_mixin.py:115} INFO - [2023-10-02 23:55:12,248] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 54, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 26, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+[2023-10-02 23:55:12,252] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:12,264] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.225 seconds
+[2023-10-02 23:55:19,298] {processor.py:153} INFO - Started process (PID=273) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:19,299] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:19,299] {logging_mixin.py:115} INFO - [2023-10-02 23:55:19,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:19,537] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:55:19,541] {logging_mixin.py:115} INFO - [2023-10-02 23:55:19,537] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:55:19,542] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:19,554] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.257 seconds
+[2023-10-02 23:55:29,597] {processor.py:153} INFO - Started process (PID=279) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:29,597] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:29,598] {logging_mixin.py:115} INFO - [2023-10-02 23:55:29,598] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:29,795] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:55:29,798] {logging_mixin.py:115} INFO - [2023-10-02 23:55:29,796] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:55:29,800] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:29,811] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.215 seconds
+[2023-10-02 23:55:39,850] {processor.py:153} INFO - Started process (PID=285) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:39,850] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:39,851] {logging_mixin.py:115} INFO - [2023-10-02 23:55:39,850] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:40,050] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:55:40,053] {logging_mixin.py:115} INFO - [2023-10-02 23:55:40,050] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:55:40,054] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:40,065] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.217 seconds
+[2023-10-02 23:55:50,104] {processor.py:153} INFO - Started process (PID=291) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:50,105] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:55:50,105] {logging_mixin.py:115} INFO - [2023-10-02 23:55:50,105] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:50,316] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:55:50,319] {logging_mixin.py:115} INFO - [2023-10-02 23:55:50,316] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:55:50,320] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:55:50,332] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.229 seconds
+[2023-10-02 23:56:00,374] {processor.py:153} INFO - Started process (PID=297) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:00,375] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:00,375] {logging_mixin.py:115} INFO - [2023-10-02 23:56:00,375] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:00,590] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:00,593] {logging_mixin.py:115} INFO - [2023-10-02 23:56:00,590] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:00,594] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:00,605] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.233 seconds
+[2023-10-02 23:56:10,648] {processor.py:153} INFO - Started process (PID=303) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:10,648] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:10,648] {logging_mixin.py:115} INFO - [2023-10-02 23:56:10,648] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:10,868] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:10,871] {logging_mixin.py:115} INFO - [2023-10-02 23:56:10,868] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:10,873] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:10,884] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.238 seconds
+[2023-10-02 23:56:20,924] {processor.py:153} INFO - Started process (PID=309) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:20,925] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:20,925] {logging_mixin.py:115} INFO - [2023-10-02 23:56:20,925] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:21,151] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:21,154] {logging_mixin.py:115} INFO - [2023-10-02 23:56:21,151] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:21,155] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:21,219] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.296 seconds
+[2023-10-02 23:56:31,262] {processor.py:153} INFO - Started process (PID=315) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:31,262] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:31,263] {logging_mixin.py:115} INFO - [2023-10-02 23:56:31,263] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:31,487] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:31,490] {logging_mixin.py:115} INFO - [2023-10-02 23:56:31,487] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:31,491] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:31,502] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.242 seconds
+[2023-10-02 23:56:41,547] {processor.py:153} INFO - Started process (PID=321) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:41,547] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:41,548] {logging_mixin.py:115} INFO - [2023-10-02 23:56:41,548] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:41,800] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:41,803] {logging_mixin.py:115} INFO - [2023-10-02 23:56:41,801] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:41,804] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:41,815] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.271 seconds
+[2023-10-02 23:56:51,860] {processor.py:153} INFO - Started process (PID=327) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:51,860] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:56:51,860] {logging_mixin.py:115} INFO - [2023-10-02 23:56:51,860] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:52,072] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:56:52,076] {logging_mixin.py:115} INFO - [2023-10-02 23:56:52,073] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:56:52,077] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:56:52,088] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.230 seconds
+[2023-10-02 23:57:01,886] {processor.py:153} INFO - Started process (PID=333) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:01,886] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:01,886] {logging_mixin.py:115} INFO - [2023-10-02 23:57:01,886] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:02,107] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:02,111] {logging_mixin.py:115} INFO - [2023-10-02 23:57:02,107] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:02,112] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:02,124] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.240 seconds
+[2023-10-02 23:57:12,157] {processor.py:153} INFO - Started process (PID=339) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:12,157] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:12,158] {logging_mixin.py:115} INFO - [2023-10-02 23:57:12,157] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:12,370] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:12,373] {logging_mixin.py:115} INFO - [2023-10-02 23:57:12,371] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:12,374] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:12,385] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.230 seconds
+[2023-10-02 23:57:14,410] {processor.py:153} INFO - Started process (PID=345) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:14,410] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:14,411] {logging_mixin.py:115} INFO - [2023-10-02 23:57:14,411] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:14,647] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:14,650] {logging_mixin.py:115} INFO - [2023-10-02 23:57:14,647] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:14,651] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:14,664] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.255 seconds
+[2023-10-02 23:57:21,699] {processor.py:153} INFO - Started process (PID=351) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:21,700] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:21,700] {logging_mixin.py:115} INFO - [2023-10-02 23:57:21,700] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:21,933] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:21,937] {logging_mixin.py:115} INFO - [2023-10-02 23:57:21,934] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:21,938] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:21,950] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.252 seconds
+[2023-10-02 23:57:41,451] {processor.py:153} INFO - Started process (PID=176) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:41,451] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:41,451] {logging_mixin.py:115} INFO - [2023-10-02 23:57:41,451] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:41,695] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:41,703] {logging_mixin.py:115} INFO - [2023-10-02 23:57:41,697] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:41,704] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:41,718] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.269 seconds
+[2023-10-02 23:57:51,765] {processor.py:153} INFO - Started process (PID=183) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:51,765] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:57:51,766] {logging_mixin.py:115} INFO - [2023-10-02 23:57:51,766] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:51,989] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:57:51,993] {logging_mixin.py:115} INFO - [2023-10-02 23:57:51,990] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:57:51,995] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:57:52,006] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.243 seconds
+[2023-10-02 23:58:02,046] {processor.py:153} INFO - Started process (PID=189) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:02,047] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:02,047] {logging_mixin.py:115} INFO - [2023-10-02 23:58:02,047] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:02,258] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:02,261] {logging_mixin.py:115} INFO - [2023-10-02 23:58:02,258] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:02,262] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:02,273] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.229 seconds
+[2023-10-02 23:58:12,315] {processor.py:153} INFO - Started process (PID=195) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:12,315] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:12,316] {logging_mixin.py:115} INFO - [2023-10-02 23:58:12,316] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:12,526] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:12,529] {logging_mixin.py:115} INFO - [2023-10-02 23:58:12,526] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:12,530] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:12,543] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.230 seconds
+[2023-10-02 23:58:22,641] {processor.py:153} INFO - Started process (PID=201) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:22,642] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:22,642] {logging_mixin.py:115} INFO - [2023-10-02 23:58:22,642] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:22,881] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:22,884] {logging_mixin.py:115} INFO - [2023-10-02 23:58:22,881] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:22,885] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:22,896] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.256 seconds
+[2023-10-02 23:58:32,939] {processor.py:153} INFO - Started process (PID=207) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:32,939] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:32,940] {logging_mixin.py:115} INFO - [2023-10-02 23:58:32,940] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:33,154] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:33,157] {logging_mixin.py:115} INFO - [2023-10-02 23:58:33,154] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:33,158] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:33,170] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.233 seconds
+[2023-10-02 23:58:43,214] {processor.py:153} INFO - Started process (PID=213) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:43,214] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:43,214] {logging_mixin.py:115} INFO - [2023-10-02 23:58:43,214] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:43,434] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:43,437] {logging_mixin.py:115} INFO - [2023-10-02 23:58:43,434] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:43,438] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:43,449] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.237 seconds
+[2023-10-02 23:58:53,498] {processor.py:153} INFO - Started process (PID=219) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:53,498] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:58:53,499] {logging_mixin.py:115} INFO - [2023-10-02 23:58:53,498] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:53,725] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:58:53,728] {logging_mixin.py:115} INFO - [2023-10-02 23:58:53,725] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:58:53,729] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:58:53,741] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.245 seconds
+[2023-10-02 23:59:03,784] {processor.py:153} INFO - Started process (PID=225) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:03,784] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:59:03,785] {logging_mixin.py:115} INFO - [2023-10-02 23:59:03,784] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:03,999] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:59:04,002] {logging_mixin.py:115} INFO - [2023-10-02 23:59:03,999] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 62, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:59:04,003] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:04,015] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.232 seconds
+[2023-10-02 23:59:13,055] {processor.py:153} INFO - Started process (PID=231) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:13,056] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:59:13,056] {logging_mixin.py:115} INFO - [2023-10-02 23:59:13,056] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:13,281] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:59:13,284] {logging_mixin.py:115} INFO - [2023-10-02 23:59:13,282] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:59:13,285] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:13,297] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.243 seconds
+[2023-10-02 23:59:23,340] {processor.py:153} INFO - Started process (PID=237) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:23,340] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:59:23,341] {logging_mixin.py:115} INFO - [2023-10-02 23:59:23,340] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:23,553] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:59:23,557] {logging_mixin.py:115} INFO - [2023-10-02 23:59:23,554] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:59:23,558] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:23,569] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.231 seconds
+[2023-10-02 23:59:33,607] {processor.py:153} INFO - Started process (PID=243) to work on /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:33,607] {processor.py:641} INFO - Processing file /opt/airflow/dags/api_covid.py for tasks to queue
+[2023-10-02 23:59:33,608] {logging_mixin.py:115} INFO - [2023-10-02 23:59:33,608] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:33,823] {logging_mixin.py:115} INFO - Error al conectar a la base de datos: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2023-10-02 23:59:33,826] {logging_mixin.py:115} INFO - [2023-10-02 23:59:33,823] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/api_covid.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/api_covid.py", line 55, in <module>
+    fecha = get_fecha()
+  File "/opt/airflow/dags/api_covid.py", line 27, in get_fecha
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-02 23:59:33,827] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/api_covid.py
+[2023-10-02 23:59:33,838] {processor.py:161} INFO - Processing /opt/airflow/dags/api_covid.py took 0.233 seconds

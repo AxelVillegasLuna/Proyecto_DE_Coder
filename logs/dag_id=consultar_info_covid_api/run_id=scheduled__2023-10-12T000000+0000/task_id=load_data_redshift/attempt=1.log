@@ -1,0 +1,43 @@
+[2023-10-13 18:12:44,823] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.load_data_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 18:12:44,829] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: consultar_info_covid_api.load_data_redshift scheduled__2023-10-12T00:00:00+00:00 [queued]>
+[2023-10-13 18:12:44,829] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 18:12:44,830] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2023-10-13 18:12:44,830] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-13 18:12:44,843] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_data_redshift> on 2023-10-12 00:00:00+00:00
+[2023-10-13 18:12:44,846] {standard_task_runner.py:52} INFO - Started process 192 to run task
+[2023-10-13 18:12:44,848] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'consultar_info_covid_api', 'load_data_redshift', 'scheduled__2023-10-12T00:00:00+00:00', '--job-id', '347', '--raw', '--subdir', 'DAGS_FOLDER/api_covid.py', '--cfg-path', '/tmp/tmpzhx11ehf', '--error-file', '/tmp/tmpaisho4w3']
+[2023-10-13 18:12:44,848] {standard_task_runner.py:80} INFO - Job 347: Subtask load_data_redshift
+[2023-10-13 18:12:44,888] {task_command.py:371} INFO - Running <TaskInstance: consultar_info_covid_api.load_data_redshift scheduled__2023-10-12T00:00:00+00:00 [running]> on host 738c88afe20a
+[2023-10-13 18:12:44,940] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Axel Villegas Luna
+AIRFLOW_CTX_DAG_ID=consultar_info_covid_api
+AIRFLOW_CTX_TASK_ID=load_data_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-12T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-12T00:00:00+00:00
+[2023-10-13 18:12:49,897] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials i10-20020aa787ca000000b0068fece22469sm13786944pfo.4 - gsmtp')
+[2023-10-13 18:12:49,898] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:12:54,911] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials ge9-20020a17090b0e0900b0026b3a86b0d5sm415261pjb.33 - gsmtp')
+[2023-10-13 18:12:54,912] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:00,259] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials s129-20020a625e87000000b0068fe9c7b199sm132964pfb.105 - gsmtp')
+[2023-10-13 18:13:00,259] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:06,801] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials o11-20020a170902778b00b001c5f7e06256sm4159932pll.152 - gsmtp')
+[2023-10-13 18:13:06,802] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:14,500] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials pb11-20020a17090b3c0b00b002794fe14cabsm417185pjb.12 - gsmtp')
+[2023-10-13 18:13:14,500] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:21,389] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials y22-20020aa79436000000b0069343e474bcsm1326500pfo.104 - gsmtp')
+[2023-10-13 18:13:21,389] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:28,809] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials s14-20020a170902ea0e00b001c9b5b63e36sm4183871plg.32 - gsmtp')
+[2023-10-13 18:13:28,810] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:37,455] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials ka1-20020a056a00938100b006a6e0903dfesm8112424pfb.204 - gsmtp')
+[2023-10-13 18:13:37,455] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:46,048] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials ja20-20020a170902efd400b001c1f4edfb9csm4182015plb.173 - gsmtp')
+[2023-10-13 18:13:46,048] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:55,824] {logging_mixin.py:115} INFO - (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials p2-20020a170902eac200b001c0ce518e98sm4171303pld.224 - gsmtp')
+[2023-10-13 18:13:55,824] {logging_mixin.py:115} INFO - Failure
+[2023-10-13 18:13:55,824] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-13 18:13:55,834] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=consultar_info_covid_api, task_id=load_data_redshift, execution_date=20231012T000000, start_date=20231013T181244, end_date=20231013T181355
+[2023-10-13 18:13:55,849] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-13 18:13:55,869] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

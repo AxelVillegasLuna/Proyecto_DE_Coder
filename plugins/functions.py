@@ -1,6 +1,4 @@
 from datetime import datetime, timedelta
-from airflow import DAG
-from airflow.operators.python import PythonOperator
 import os
 import smtplib
 import pytz
@@ -43,7 +41,6 @@ def get_fecha():
     conn.close()
     return fecha_format
 
-# Función para enviar el email
 def enviar_mail(mensaje, error=0):
   try:
       x=smtplib.SMTP('smtp.gmail.com',587)
@@ -85,8 +82,7 @@ def get_casos(url):
         return data
     except requests.exceptions.RequestException:
         None
-
-# Función para crear la tabla en nuestro esquema
+# Creamos la tabla en nuestro esquema
 def crear_tabla():
     conn = get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS)
     cur = conn.cursor()
@@ -102,8 +98,7 @@ def crear_tabla():
         activos int,
         dif_activos_ant int,
         tasa_mortalidad float,
-        region varchar(25),
-        fecha_proceso date
+        region varchar(25)
     )
     '''
     cur.execute(create_table_query)
@@ -111,11 +106,9 @@ def crear_tabla():
     cur.close()
     conn.close()
 
-# Función para cargar la información en la tabla de nuestro esquema
 def cargar_informacion():
     try:
         mail = ''
-        fecha_proceso = datetime.today().date()
         for pais in paises:
             url = f'https://covid-api.com/api/reports?date={fecha}&iso={pais}&per_page=1'
             respuesta = get_casos(url)
@@ -144,7 +137,7 @@ def cargar_informacion():
         # Iteramos las filas del DataFrame para insertarlas en la tabla en RedShift
         for index, row in df.iterrows():
             insert_table_query = f"""INSERT INTO villegas_axel_coderhouse.casos (fecha, confirmados, dif_confirm_ant, muertes, dif_muertes_ant, recuperados,
-                                    dif_recup_ant, activos, dif_activos_ant, tasa_mortalidad, region, fecha_proceso) VALUES (to_date('{row['fecha']}', 'yyyy-mm-dd'), {row['confirmados']}, {row['dif_confirmados']}, {row['muertes']},{row['dif_muertes_ant']}, {row['recuperados']}, {row['dif_recup_ant']}, {row['activos']}, {row['dif_activos_ant']}, {row['tasa_mortalidad']}, '{row['region']}', to_date('{fecha_proceso}','yyyy-mm-dd'))"""
+                                    dif_recup_ant, activos, dif_activos_ant, tasa_mortalidad, region) VALUES (to_date('{row['fecha']}', 'yyyy-mm-dd'), {row['confirmados']}, {row['dif_confirmados']}, {row['muertes']}, {row['dif_muertes_ant']}, {row['recuperados']}, {row['dif_recup_ant']}, {row['activos']}, {row['dif_activos_ant']}, {row['tasa_mortalidad']}, '{row['region']}')"""
             cur.execute(insert_table_query)
             conn.commit()
             mail = mail + f"Fecha: {row['fecha']} - Pais: {row['region']} - Confirmados: {row['confirmados']} - Muertes: {row['muertes']} - Recuperados: {row['recuperados']}\n"
@@ -154,7 +147,6 @@ def cargar_informacion():
     except Exception as e:
         enviar_mail(e, 1)
 
-# Función para actualizar la tabla paramétrica
 def update_parametrica():
     conn = get_conection(host_RS, db_name_RS, user_RS, passw_RS, port_RS)
     cur = conn.cursor()
@@ -167,35 +159,5 @@ def update_parametrica():
     cur.close()
     conn.close()
 
-default_args={
-    'owner': 'Axel Villegas Luna',
-    'depends_on_past': False,
-    'retries':5,
-    'retry_delay': timedelta(minutes=3)
-}
 
-with DAG(
-    default_args=default_args,
-    dag_id='consultar_info_covid_api',
-    start_date=datetime(2023,9,29,2),
-    schedule_interval='@daily',
-    max_active_runs=1
-    ) as dag:
 
-    task1= PythonOperator(
-        task_id='create_table_redshift',
-        python_callable= crear_tabla,
-    )
-
-    task2= PythonOperator(
-        task_id='load_data_redshift',
-        python_callable= cargar_informacion,
-    )
-
-    task3= PythonOperator(
-        task_id='update_param_redshift',
-        python_callable= update_parametrica,
-    )
-
-    task1.set_downstream(task2)
-    task2.set_downstream(task3)
